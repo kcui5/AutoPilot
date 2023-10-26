@@ -1,0 +1,8 @@
+gym==0.25.2
+tensorboard==2.10.0
+tensorboardX==2.5.1
+matplotlib==3.5.3
+torch==1.12.1
+opencv-python==4.6.0.66
+pyautogui==0.9.53
+Pillow==9.1.0
