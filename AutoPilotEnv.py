@@ -101,7 +101,9 @@ def main():
 
     state = env.reset()
     print("Initial State Captured (showing a portion due to size):")
-    print(state[:2, :2, :]) 
+    plt.imshow(state)
+    plt.title("Initial State")
+    plt.show()
 
     # Run a few steps
     for _ in range(10): 
@@ -111,10 +113,12 @@ def main():
         print(f"Action Taken: {action}")
         print(f"Reward: {reward}")
         print("State Captured (showing a portion due to size):")
-        print(state[:2, :2, :]) 
+        plt.imshow(state)
+        plt.show()
 
         if done:
             break
 
 if __name__ == "__main__":
     main()
+
